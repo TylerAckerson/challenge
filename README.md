@@ -27,7 +27,7 @@ The `usage.csv` file contains the relevant student usage.  Each row describes a 
 We would like you to write a program in ruby to select questions for a quiz. Please feel free to use any libraries you choose.
 
 ### Basic Requirements
-* The program should prompt the user for the number of questions to put in the quiz. Any integer value greater than 0 is acceptable.
+<!-- * The program should prompt the user for the number of questions to put in the quiz. Any integer value greater than 0 is acceptable. -->
 * The expected output is to display a list of question_ids
 * Use each strand as close as possible to an equal number of times. (e.g. There are two strands, so if the user asks for a 3 question quiz, it's okay to choose one strand twice and the other once.)
 * Use each standard as close as possible to an equal number of times.
@@ -51,4 +51,3 @@ Choose any or all of the following, time permitting:
 * If you're about to begin, and you think to yourself: "I think I should use rails!" then you should know that nobody who has ever gone down that rabbit hole has ever succeeded. THERE BE DHHRAGONS!
 
 -[Good luck!](https://s3-us-west-2.amazonaws.com/static.noredink.com/stan-carey-doge-meme-wow-such-win-because-grammar-so-amaze-much-usage-very-language.jpg)
-

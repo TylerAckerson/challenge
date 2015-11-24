@@ -1,8 +1,11 @@
 require 'byebug'
-
 require_relative 'file_reader'
 
 class QuestionGenerator
+  def initialize(file_reader)
+    @file_reader = file_reader
+  end
+
   def prompt_for_count
     puts "How many questions would you like to answer?"
     print ">> "
@@ -14,7 +17,7 @@ class QuestionGenerator
       prompt_for_count
     else
       question = count == 1 ? "question" : "questions"
-      puts "Okay -- #{count} #{question} coming right up!"
+      puts "#{count} #{question} coming right up!"
 
       display_questions(count)
     end
@@ -22,13 +25,14 @@ class QuestionGenerator
   end
 
   def display_questions(num_questions)
-    puts "here are the #{num_questions} questions"
-
+    questions_list = @file_reader.get_questions(num_questions)
+    questions_list.each { |question| puts "Question id: #{question}" }
   end
+
 end
 
 if __FILE__ == $PROGRAM_NAME
-  question_gen = QuestionGenerator.new
   file_reader = FileReader.new
+  question_gen = QuestionGenerator.new(file_reader)
   question_gen.prompt_for_count
 end

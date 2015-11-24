@@ -1,5 +1,5 @@
 strand_id,strand_name,standard_id,standard_name,question_id,difficulty
-1,Nouns,1,Common Nouns,1,0.7
+1,Nouns, 1,Common Nouns, 1,0.7
 1,Nouns,1,Common Nouns,2,0.6
 1,Nouns,2,Abstract Nouns,3,0.8
 1,Nouns,3,Proper Nouns,4,0.2
